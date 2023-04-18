@@ -1,8 +1,11 @@
 #include <stdio.h>
+
 /**
- * main will print the name of the file
- * returns a success
+ * main - is used as refernce in this case a data type
+ *
+ * Return: Always 0 (Success)
  */
+
 
 int main(void)
 {
@@ -10,4 +13,3 @@ int main(void)
 
 	return (0);
 }
-#endif
