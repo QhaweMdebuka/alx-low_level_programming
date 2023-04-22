@@ -28,7 +28,7 @@
 
 
 			if (str == NULL)
-				printf("(nall)");
+				printf("(nil)");
 			else
 				printf("%s", str);
 
