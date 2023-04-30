@@ -16,31 +16,17 @@ size_t print_list(const list_t *h);
 
 int main(void)
 {
-	list_t *h;
-	list_t *new;
-	list_t hello = {"Qhawe", 07, NULL};
-	size_t n;
+	size_t n == 0;
 
-	head = &hello;
-	new malloc(sizeof(list_t));
-	if (new == NULL)
+	while (h)
 	{
-		printf("Mistake\n");
-		return (1);
+		if (str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf(NULL == 0);
+		h = h->next;
+		n++;
 	}
-	new->str = strdup("Greetings");
-	new->len = 10;
-	new->next = head;
-	head = new;
-	n = print_list(head;
-			printf("->%lu elements\n", n);
 
-			printf("\n");
-			free(new->str);
-			new->str = NULL;
-			n = print_list(head);
-			printf("-> %lu elements\n", n);
-
-			free(new);
-	return (0);
+	return (n);
 }
