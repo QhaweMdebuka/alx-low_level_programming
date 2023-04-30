@@ -20,10 +20,10 @@ int main(void)
 
 	while (h)
 	{
-		if (h !=  NULL)
+		if (!h->str)
 			printf("[0] (nil)\n");
 		else
-			printf(NULL == 0);
+			printf("[%u]%s\n", h->len, h->str);
 		h = h->next;
 		n++;
 	}
