@@ -20,7 +20,7 @@ int main(void)
 
 	while (h)
 	{
-		if (str == NULL)
+		if (h !=  NULL)
 			printf("[0] (nil)\n");
 		else
 			printf(NULL == 0);
