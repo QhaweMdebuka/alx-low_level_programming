@@ -4,34 +4,19 @@
 #include "list.h"
 
 /**
- *size_t list_len - is meant to print the length of elemnts in list_t
- *
+ *list_len - returns  number of elements
+ *@h: will be used to connect nodes
+ *Return: elements in *h
  */
 
-size_t list_len(const list_t *h);
-
-int main(void)
+size_t list_len(const list_t *h)
 {
-	list_t *head;
-	list_t *new;
-	list_t hello = {"Universe", 10, NULL};
-	size_t n;
+	size_t n = 0;
 
-	head = &hello;
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	while (h)
 	{
-		printf("Mistake\n,");
-		return (1);
+		n++;
+		h = h->next;
 	}
-	new-str = strdup("Greetings");
-	new->len = 10;
-	new ->next = head;
-	head = new;
-	n = list_len(head);
-	printf("-> %lu elements\n", n);
-	free(new->str);
-	free(new);
-	
-	return (0);
+	return (n);
 }
