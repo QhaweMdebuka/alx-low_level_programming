@@ -14,7 +14,6 @@
 
 size_t print_list(const list_t *h);
 
-int main(void)
 {
 	size_t n == 0;
 
