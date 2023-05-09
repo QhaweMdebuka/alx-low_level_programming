@@ -17,7 +17,7 @@ char *create_buffer(char *file)
 
 	if (buffer == NULL)
 	{
-		dprints(STDERR_FILENO,
+		dprintf(STDERR_FILENO,
 				"Error: Cant write to %s\n", file);
 		exit(99);
 	}
@@ -45,7 +45,7 @@ void close_file(int fd)
  * main - cps file contents
  * @argc: number of arguments
  * @argv: name of arguments
- * Return: 0 on success.
+ * Return: 0 on success
  *
  * Description: argument count incorrect - exit code 97.
  * If file_from : if file doesnt exist  - exit code 98.
